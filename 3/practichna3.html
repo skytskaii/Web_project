@@ -1,0 +1,48 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення кнопки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #0056b3;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #0056b3, #007bff);
+            color: #f4f4f4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .button:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://github.com/skytsaki" class="button">Перейти на github</a>
+</body>
+</html>

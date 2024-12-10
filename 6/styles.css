@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+.animation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(270deg, #ff7f7f, #7f7fff, #7fff7f, #ffff7f);
+    background-size: 800% 100%;
+    animation: backgroundScroll 8s linear infinite;
+}
+
+@keyframes backgroundScroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.pokemon {
+    position: absolute;
+    bottom: 10%;
+    left: -150px;
+    width: 150px;
+    animation: pokemonMove 4s ease-in-out infinite;
+}
+
+@keyframes pokemonMove {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(120vw) scale(1.2);
+    }
+    100% {
+        transform: translateX(240vw) scale(1);
+    }
+}

@@ -1,0 +1,96 @@
+/* Базові стилі */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: url('https://media.gucci.com/dynamic/b3c8/D8B07jELl2OMMNpzBmI73I22dBmFknQ0k0JXGygiGAdrDMHGashgZHAdO4V6qX2GkcRzoDDuJhJe0ZqyU1J2DuYz0LzBeDgi6Mm4eAlIpyTjB+EzC1nEQ6uRjkAW9zl2lm6ohPczBD2u3vpPtSE0D6AmtU248iPPGFb8p1pz9igXgHIfxE74Ov_odU3fN4UHmvv49c6lr81KQXjBKzaHAnHZ58MGSq+PjC+fcNhdnF8Ri8GP6pQnym1QNlZidHS34plKisBXWDRz7QoqXPnguodbBcN1E49_3d7MPgjhEn8VUzijF5ocb_3p+3eopvME+4qkgc9G1RA5B5u9DgsGbmTrEDk3mU+99Mz6II42sDN8FLioiRjClpxbfolFNYmZ/HP_Hero-FullBleed-Desktop_Gucci-GiftGiving-Nov24-ASE-240801-0001-0365_001_Default.png') center/cover no-repeat;
+}
+
+.header {
+    width: 97.9%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px 20px;
+    position: relative; 
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.header__nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px); 
+    position: relative;
+    color: #fff;
+}
+
+.intro__content {
+    text-align: left; /* Вирівнювання тексту ліворуч */
+    position: relative;
+    z-index: 2;
+    margin-left: -20%; /* Негативний відступ для зміщення ліворуч */
+}
+
+.intro__title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.intro__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    background-color: #333;
+}
+
+.button--cta:hover {
+    background-color: #555;
+    transform: scale(1.25);
+}
+
+.button--cta:active {
+    background-color: #111;
+}

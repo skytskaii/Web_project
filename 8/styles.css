@@ -1,0 +1,59 @@
+body {
+  background: url("https://intl.nothing.tech/cdn/shop/files/Desktop_BA_AERO_210-min_1_1_2160x.png?v=1715330263") center/cover no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  color: #000000;
+}
+header__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 80px);
+}
+.intro__content {
+  max-width: 500px;
+  padding: 20px;
+}
+.intro__content__description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button--primary:hover {
+  background-color: #000000;
+  color: #ffffff;
+}/*# sourceMappingURL=styles.css.map */

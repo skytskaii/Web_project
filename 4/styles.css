@@ -1,0 +1,120 @@
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;             
+    padding: 10px 15px;       
+    font-size: 16px;          
+    border: 1px solid #ccc;   
+    border-radius: 5px;       
+    outline: none;   
+}
+
+.search-bar button {
+    padding: 8px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.profile img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 240px;
+    height: 100%; /* Бокова панель займає всю висоту контейнера */
+    background-color: #ffffff;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #606060;
+}
+
+.sidebar ul li:hover {
+    color: #000000;
+}
+
+.sidebar img.photo {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #606060;
+}
